@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap");
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13em;
+}
+
+h1 {
+  font-size: 4.5em;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+}
+
+input {
+  margin-top: 2em;
+
+  max-width: 80%;
+  min-width: 68%;
+
+  min-height: 1.6em;
+  max-height: 2em;
+
+  text-align: center;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+
+  border-radius: 1em;
+  border: 1px solid black;
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: clamp(7em, 7.5em, 8em);
+  }
+
+  input {
+    margin-top: 4em;
+    max-height: 2.5em;
+
+    max-width: 45%;
+    min-width: 40%;
+
+    min-height: 2em;
+    max-height: 2.2em;
+
+    font-size: clamp(1.5em, 1.6em, 1.8em);
+  }
+}
